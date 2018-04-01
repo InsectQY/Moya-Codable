@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Moya_Codable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6za-Ga-mmf">
+                                <rect key="frame" x="122.5" y="104" width="130" height="35"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="8Xg-To-jEz"/>
+                                    <constraint firstAttribute="width" constant="130" id="ieg-Ha-GZ7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <state key="normal" title="Object"/>
+                                <connections>
+                                    <action selector="ObjectBtnDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DGp-ds-Iam"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSr-Yo-CSm">
+                                <rect key="frame" x="122.5" y="169" width="130" height="35"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="fP8-dL-lvC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <state key="normal" title="Array"/>
+                                <connections>
+                                    <action selector="ArrayBtnDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TXh-YI-YvS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pSr-Yo-CSm" firstAttribute="width" secondItem="6za-Ga-mmf" secondAttribute="width" id="8j2-x8-cnG"/>
+                            <constraint firstItem="pSr-Yo-CSm" firstAttribute="centerX" secondItem="6za-Ga-mmf" secondAttribute="centerX" id="EIS-FE-8di"/>
+                            <constraint firstItem="pSr-Yo-CSm" firstAttribute="top" secondItem="6za-Ga-mmf" secondAttribute="bottom" constant="30" id="X9T-mI-YBE"/>
+                            <constraint firstItem="6za-Ga-mmf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jJk-w5-CKn"/>
+                            <constraint firstItem="6za-Ga-mmf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="xn1-fd-W8x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

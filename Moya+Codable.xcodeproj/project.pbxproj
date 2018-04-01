@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E57F64C2206F4F1000B96513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F64C1206F4F1000B96513 /* AppDelegate.swift */; };
+		E57F64C4206F4F1000B96513 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F64C3206F4F1000B96513 /* ViewController.swift */; };
+		E57F64C7206F4F1000B96513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57F64C5206F4F1000B96513 /* Main.storyboard */; };
+		E57F64C9206F4F1000B96513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57F64C8206F4F1000B96513 /* Assets.xcassets */; };
+		E57F64CC206F4F1000B96513 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57F64CA206F4F1000B96513 /* LaunchScreen.storyboard */; };
+		E57F64D7206F4FAC00B96513 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57F64D5206F4FAC00B96513 /* Moya.framework */; };
+		E57F64D8206F4FAC00B96513 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57F64D6206F4FAC00B96513 /* Result.framework */; };
+		E57F64DA206F502400B96513 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F64D9206F502400B96513 /* Api.swift */; };
+		E57F64DC206F51E800B96513 /* Moya+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F64DB206F51E800B96513 /* Moya+Codable.swift */; };
+		E57F64E0206F535200B96513 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57F64DF206F535200B96513 /* Alamofire.framework */; };
+		E57F64E4206F8EFE00B96513 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F64E3206F8EFE00B96513 /* Movie.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E57F64BE206F4F1000B96513 /* Moya+Codable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moya+Codable.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57F64C1206F4F1000B96513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E57F64C3206F4F1000B96513 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E57F64C6206F4F1000B96513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E57F64C8206F4F1000B96513 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E57F64CB206F4F1000B96513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E57F64CD206F4F1000B96513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E57F64D5206F4FAC00B96513 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		E57F64D6206F4FAC00B96513 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		E57F64D9206F502400B96513 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		E57F64DB206F51E800B96513 /* Moya+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+Codable.swift"; sourceTree = "<group>"; };
+		E57F64DF206F535200B96513 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		E57F64E3206F8EFE00B96513 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E57F64BB206F4F1000B96513 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57F64E0206F535200B96513 /* Alamofire.framework in Frameworks */,
+				E57F64D7206F4FAC00B96513 /* Moya.framework in Frameworks */,
+				E57F64D8206F4FAC00B96513 /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E504301A207073D400154DD0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E57F64DB206F51E800B96513 /* Moya+Codable.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E57F64B5206F4F1000B96513 = {
+			isa = PBXGroup;
+			children = (
+				E57F64C0206F4F1000B96513 /* Moya+Codable */,
+				E57F64BF206F4F1000B96513 /* Products */,
+				E57F64D4206F4FAC00B96513 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E57F64BF206F4F1000B96513 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E57F64BE206F4F1000B96513 /* Moya+Codable.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E57F64C0206F4F1000B96513 /* Moya+Codable */ = {
+			isa = PBXGroup;
+			children = (
+				E5B516ED2070D64B00A47C1D /* Api */,
+				E5B516EC2070D64100A47C1D /* Model */,
+				E504301A207073D400154DD0 /* Extension */,
+				E57F64C1206F4F1000B96513 /* AppDelegate.swift */,
+				E57F64C3206F4F1000B96513 /* ViewController.swift */,
+				E57F64C5206F4F1000B96513 /* Main.storyboard */,
+				E57F64C8206F4F1000B96513 /* Assets.xcassets */,
+				E57F64CA206F4F1000B96513 /* LaunchScreen.storyboard */,
+				E57F64CD206F4F1000B96513 /* Info.plist */,
+			);
+			path = "Moya+Codable";
+			sourceTree = "<group>";
+		};
+		E57F64D4206F4FAC00B96513 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E57F64DF206F535200B96513 /* Alamofire.framework */,
+				E57F64D5206F4FAC00B96513 /* Moya.framework */,
+				E57F64D6206F4FAC00B96513 /* Result.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5B516EC2070D64100A47C1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E57F64E3206F8EFE00B96513 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E5B516ED2070D64B00A47C1D /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				E57F64D9206F502400B96513 /* Api.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E57F64BD206F4F1000B96513 /* Moya+Codable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E57F64D0206F4F1000B96513 /* Build configuration list for PBXNativeTarget "Moya+Codable" */;
+			buildPhases = (
+				E57F64BA206F4F1000B96513 /* Sources */,
+				E57F64BB206F4F1000B96513 /* Frameworks */,
+				E57F64BC206F4F1000B96513 /* Resources */,
+				E57F64D3206F4F8300B96513 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Moya+Codable";
+			productName = "Moya+Codable";
+			productReference = E57F64BE206F4F1000B96513 /* Moya+Codable.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E57F64B6206F4F1000B96513 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = QY;
+				TargetAttributes = {
+					E57F64BD206F4F1000B96513 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E57F64B9206F4F1000B96513 /* Build configuration list for PBXProject "Moya+Codable" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E57F64B5206F4F1000B96513;
+			productRefGroup = E57F64BF206F4F1000B96513 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E57F64BD206F4F1000B96513 /* Moya+Codable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E57F64BC206F4F1000B96513 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57F64CC206F4F1000B96513 /* LaunchScreen.storyboard in Resources */,
+				E57F64C9206F4F1000B96513 /* Assets.xcassets in Resources */,
+				E57F64C7206F4F1000B96513 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E57F64D3206F4F8300B96513 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E57F64BA206F4F1000B96513 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57F64DC206F51E800B96513 /* Moya+Codable.swift in Sources */,
+				E57F64DA206F502400B96513 /* Api.swift in Sources */,
+				E57F64E4206F8EFE00B96513 /* Movie.swift in Sources */,
+				E57F64C4206F4F1000B96513 /* ViewController.swift in Sources */,
+				E57F64C2206F4F1000B96513 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E57F64C5206F4F1000B96513 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E57F64C6206F4F1000B96513 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E57F64CA206F4F1000B96513 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E57F64CB206F4F1000B96513 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E57F64CE206F4F1000B96513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E57F64CF206F4F1000B96513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E57F64D1206F4F1000B96513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76XQSR295L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Moya+Codable/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "QY.Moya-Codable";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E57F64D2206F4F1000B96513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76XQSR295L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Moya+Codable/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "QY.Moya-Codable";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E57F64B9206F4F1000B96513 /* Build configuration list for PBXProject "Moya+Codable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E57F64CE206F4F1000B96513 /* Debug */,
+				E57F64CF206F4F1000B96513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E57F64D0206F4F1000B96513 /* Build configuration list for PBXNativeTarget "Moya+Codable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E57F64D1206F4F1000B96513 /* Debug */,
+				E57F64D2206F4F1000B96513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E57F64B6206F4F1000B96513 /* Project object */;
+}

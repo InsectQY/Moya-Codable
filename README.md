@@ -81,17 +81,17 @@ struct Person: Codable {
 Specify the parse path，Parsed into Array:
 ```swift
 ApiProvider.request(.moive("1764796"), arrayModel: Person.self, path: "directors", success: {
-print("Success...\($0)")
+    print("Success...\($0)")
 }) {
-print("Error...\($0)")
+    print("Error...\($0)")
 }
 ```
 Parsed into Object:
 ```swift
 ApiProvider.request(.moive("1764796"), objectModel: Movie.self, success: {
-print("Success...\($0)")
+    print("Success...\($0)")
 }) {
-print("Error...\($0)")
+    print("Error...\($0)")
 }
 ```
 # Installation 🔥

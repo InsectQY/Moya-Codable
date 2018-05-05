@@ -15,9 +15,15 @@
 		E57F64D7206F4FAC00B96513 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57F64D5206F4FAC00B96513 /* Moya.framework */; };
 		E57F64D8206F4FAC00B96513 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57F64D6206F4FAC00B96513 /* Result.framework */; };
 		E57F64DA206F502400B96513 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F64D9206F502400B96513 /* Api.swift */; };
-		E57F64DC206F51E800B96513 /* Moya+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F64DB206F51E800B96513 /* Moya+Codable.swift */; };
+		E57F64DC206F51E800B96513 /* MoyaProvider+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F64DB206F51E800B96513 /* MoyaProvider+Request.swift */; };
 		E57F64E0206F535200B96513 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57F64DF206F535200B96513 /* Alamofire.framework */; };
 		E57F64E4206F8EFE00B96513 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F64E3206F8EFE00B96513 /* Movie.swift */; };
+		E5D485F5209DF65000AD7808 /* Single+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D485F4209DF65000AD7808 /* Single+Codable.swift */; };
+		E5D485F7209DF74D00AD7808 /* Response+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D485F6209DF74D00AD7808 /* Response+Codable.swift */; };
+		E5D485FB209DF83600AD7808 /* ObservableType+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D485FA209DF83600AD7808 /* ObservableType+Codable.swift */; };
+		E5D48603209DFC7E00AD7808 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D485FE209DFC7E00AD7808 /* RxSwift.framework */; };
+		E5D48604209DFC7E00AD7808 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D485FF209DFC7E00AD7808 /* RxCocoa.framework */; };
+		E5D48606209DFC7E00AD7808 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D48601209DFC7E00AD7808 /* RxMoya.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +37,17 @@
 		E57F64D5206F4FAC00B96513 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
 		E57F64D6206F4FAC00B96513 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		E57F64D9206F502400B96513 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
-		E57F64DB206F51E800B96513 /* Moya+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+Codable.swift"; sourceTree = "<group>"; };
+		E57F64DB206F51E800B96513 /* MoyaProvider+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Request.swift"; sourceTree = "<group>"; };
 		E57F64DF206F535200B96513 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		E57F64E3206F8EFE00B96513 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		E5D485F4209DF65000AD7808 /* Single+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Single+Codable.swift"; sourceTree = "<group>"; };
+		E5D485F6209DF74D00AD7808 /* Response+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+Codable.swift"; sourceTree = "<group>"; };
+		E5D485FA209DF83600AD7808 /* ObservableType+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+Codable.swift"; sourceTree = "<group>"; };
+		E5D485FD209DFC7E00AD7808 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		E5D485FE209DFC7E00AD7808 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		E5D485FF209DFC7E00AD7808 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		E5D48600209DFC7E00AD7808 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		E5D48601209DFC7E00AD7808 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +55,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D48603209DFC7E00AD7808 /* RxSwift.framework in Frameworks */,
+				E5D48604209DFC7E00AD7808 /* RxCocoa.framework in Frameworks */,
+				E5D48606209DFC7E00AD7808 /* RxMoya.framework in Frameworks */,
 				E57F64E0206F535200B96513 /* Alamofire.framework in Frameworks */,
 				E57F64D7206F4FAC00B96513 /* Moya.framework in Frameworks */,
 				E57F64D8206F4FAC00B96513 /* Result.framework in Frameworks */,
@@ -50,12 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E504301A207073D400154DD0 /* Extension */ = {
+		E504301A207073D400154DD0 /* Moya-Codable */ = {
 			isa = PBXGroup;
 			children = (
-				E57F64DB206F51E800B96513 /* Moya+Codable.swift */,
+				E5D485F8209DF7BD00AD7808 /* Core */,
+				E5D485FC209DF95500AD7808 /* MoyaProvider */,
+				E5D485F9209DF7CB00AD7808 /* RxSwift */,
 			);
-			path = Extension;
+			path = "Moya-Codable";
 			sourceTree = "<group>";
 		};
 		E57F64B5206F4F1000B96513 = {
@@ -80,7 +99,7 @@
 			children = (
 				E5B516ED2070D64B00A47C1D /* Api */,
 				E5B516EC2070D64100A47C1D /* Model */,
-				E504301A207073D400154DD0 /* Extension */,
+				E504301A207073D400154DD0 /* Moya-Codable */,
 				E57F64C1206F4F1000B96513 /* AppDelegate.swift */,
 				E57F64C3206F4F1000B96513 /* ViewController.swift */,
 				E57F64C5206F4F1000B96513 /* Main.storyboard */,
@@ -94,6 +113,11 @@
 		E57F64D4206F4FAC00B96513 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E5D485FD209DFC7E00AD7808 /* RxBlocking.framework */,
+				E5D485FF209DFC7E00AD7808 /* RxCocoa.framework */,
+				E5D48601209DFC7E00AD7808 /* RxMoya.framework */,
+				E5D485FE209DFC7E00AD7808 /* RxSwift.framework */,
+				E5D48600209DFC7E00AD7808 /* RxTest.framework */,
 				E57F64DF206F535200B96513 /* Alamofire.framework */,
 				E57F64D5206F4FAC00B96513 /* Moya.framework */,
 				E57F64D6206F4FAC00B96513 /* Result.framework */,
@@ -115,6 +139,31 @@
 				E57F64D9206F502400B96513 /* Api.swift */,
 			);
 			path = Api;
+			sourceTree = "<group>";
+		};
+		E5D485F8209DF7BD00AD7808 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E5D485F6209DF74D00AD7808 /* Response+Codable.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E5D485F9209DF7CB00AD7808 /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				E5D485F4209DF65000AD7808 /* Single+Codable.swift */,
+				E5D485FA209DF83600AD7808 /* ObservableType+Codable.swift */,
+			);
+			path = RxSwift;
+			sourceTree = "<group>";
+		};
+		E5D485FC209DF95500AD7808 /* MoyaProvider */ = {
+			isa = PBXGroup;
+			children = (
+				E57F64DB206F51E800B96513 /* MoyaProvider+Request.swift */,
+			);
+			path = MoyaProvider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +244,11 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxMoya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
 			);
 			outputPaths = (
 			);
@@ -209,11 +263,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E57F64DC206F51E800B96513 /* Moya+Codable.swift in Sources */,
+				E57F64DC206F51E800B96513 /* MoyaProvider+Request.swift in Sources */,
 				E57F64DA206F502400B96513 /* Api.swift in Sources */,
 				E57F64E4206F8EFE00B96513 /* Movie.swift in Sources */,
+				E5D485FB209DF83600AD7808 /* ObservableType+Codable.swift in Sources */,
 				E57F64C4206F4F1000B96513 /* ViewController.swift in Sources */,
 				E57F64C2206F4F1000B96513 /* AppDelegate.swift in Sources */,
+				E5D485F5209DF65000AD7808 /* Single+Codable.swift in Sources */,
+				E5D485F7209DF74D00AD7808 /* Response+Codable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

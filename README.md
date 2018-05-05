@@ -76,17 +76,77 @@ struct Person: Codable {
     
     var avatars: Images
 }
-```
 
-Specify the parse path，Parsed into Array:
+```
+### 1. Without RxSwift
+
+MapObject:
 ```swift
-ApiProvider.request(.moive("1764796"), arrayModel: Person.self, path: "directors", success: {
-    print("Success...\($0)")
-}) {
-    print("Error...\($0)")
+ApiProvider.request(.moive("1764796")) { (result) in
+            
+    switch result {
+
+    case let .success(response):
+
+        do {
+
+            let success = try response.mapObject(Movie.self)
+            print("Success...\(success)")
+        } catch {
+            print(error)
+        }
+    case let .failure(error):
+        print("Error...\(error)")
+    }
 }
 ```
-Parsed into Object:
+
+You can also specify the map path:
+```swift
+ApiProvider.request(.moive("1764796")) { (result) in
+            
+    switch result {
+
+    case let .success(response):
+
+        do {
+
+            let success = try response
+            .mapArray(Person.self, path: "directors")
+            print("Success...\(success)")
+        } catch {
+            print(error)
+        }
+    case let .failure(error):
+        print("Error...\(error)")
+    }
+}
+```
+### 2. With RxSwift
+MapObject:
+```swift
+ApiProvider.rx.request(.moive("1764796"))
+    .mapObject(Movie.self)
+    .subscribe(onSuccess: {
+        print("Success...\($0)")
+    }) {
+        print("Error...\($0)")
+    }.disposed(by: disposeBag)
+```
+
+You can also specify the map path:
+```swift
+ApiProvider.rx.request(.moive("1764796"))
+    .mapArray(Person.self, path: "directors")
+    .subscribe(onSuccess: {
+        print("Success...\($0)")
+    }) {
+        print("Error...\($0)")
+    }.disposed(by: disposeBag)
+```
+
+### 3. MoyaProvider
+MapObject:
 ```swift
 ApiProvider.request(.moive("1764796"), objectModel: Movie.self, success: {
     print("Success...\($0)")
@@ -94,10 +154,20 @@ ApiProvider.request(.moive("1764796"), objectModel: Movie.self, success: {
     print("Error...\($0)")
 }
 ```
+
+You can also specify the map path:
+```swift
+ApiProvider.request(.moive("1764796"), arrayModel: Person.self, path: "directors", success: {
+    print("Success...\($0)")
+}) {
+    print("Error...\($0)")
+}
+```
+
 # Installation 🔥
 
 ## Manually
-1. Drag all source files under folder `Extension` to your project.
+1. Drag all source files under folder `Moya-Codable` to your project.
 2. Enjoy.
 
 ## CocoaPods

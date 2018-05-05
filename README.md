@@ -1,5 +1,5 @@
 # MoyaCodable
-An extension for Moya that converts JSON data into Decodable objects.
+An extension for Moya and RxSwift that converts JSON data into Decodable objects.
 
 # Requirements
 - Swift 4+
